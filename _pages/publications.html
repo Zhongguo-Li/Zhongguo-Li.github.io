@@ -5,32 +5,112 @@ permalink: /publications/
 author_profile: true
 ---
 
+
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
-{% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<div class="publications-list">
 
+<h3>📘 Book</h3>
+<ol>
+  <li>Z. Li and Z. Ding, “Distributed Optimization and Learning: A Control-Theoretic Perspective,” Academic Press, Elsevier, 286 pages, ISBN: 9780443216367, 2024.</li>
+</ol>
 
+<h3>🎓 PhD Thesis</h3>
+<ol start="2">
+  <li>Z. Li, “Distributed Cooperative and Competitive Optimisation Over Networks.” PhD dissertation, The University of Manchester, 2021.</li>
+</ol>
 
+<h3>🗓 2025 – Journal Articles</h3>
+<ol start="3">
+  <li>Z. Li, W.-H. Chen, J. Yang and C. Liu, “Cooperative active learning based dual control for exploration and exploitation in autonomous search,” <i>IEEE Transactions on Neural Networks and Learning Systems</i>, vol. 26, no. 2, pp. 2221–2233, 2025.</li>
+  <li>Z. Li, W.-H. Chen, J. Yang and Y. Yan, “Dual control of exploration and exploitation for auto-optimization control with active learning,” <i>IEEE Transactions on Automation Science and Engineering</i>, vol. 22, pp. 2145–2158, 2025.</li>
+  <li>T. Gong, Z. Li, Y. Xu and Z. Ding, “Prescribed-time Convergent Distributed Multiobjective Optimization with Dynamic Event-triggered Communication,” <i>IEEE Transactions on Systems, Man, and Cybernetics: Systems</i>, in press, 2025.</li>
+  <li>Z. Liang, Z. Wang, Z. Li*, and J. Yang*, “Rigid geometry formation subject to visibility constraints using heading angle correlation based on leader-follower system,” <i>IEEE Transactions on Automation Science and Engineering</i>, vol. 22, pp. 15070–15082, 2025.</li>
+  <li>Q. Wan, T. Fan, Z. Li, Z. Ding, “Reinforcement learning-based fixed-time tracking control for nonlinear systems with asymmetrical guaranteed performance,” <i>Neurocomputing</i>, vol. 644, no. 130410, 2025.</li>
+  <li>T. Fan, H. Hu, Q. Wan, Z. Li and Z. Ding, “Fast finite-time consensus strategy for multi-agent systems based on switching of different protocols,” <i>Journal of the Franklin Institute</i>, vol. 362(8), no. 107686, 2025.</li>
+  <li>G. Tan, W.-H. Chen, J. Yang, X.-T. Tran and Z. Li, “Dual control for autonomous airborne source search with Nesterov accelerated gradient descent: Algorithm and performance analysis,” <i>Neurocomputing</i>, vol. 630, no. 129729, 2025.</li>
+  <li>Y. Dong, Z. Li, S. Ehsan, Z. Ding and X. Huang, “Nash equilibrium seeking in non-cooperative heterogeneous multi-robot systems via output regulation,” <i>Neurocomputing</i>, vol. 619, no. 129179, 2025.</li>
+</ol>
+
+<h3>🗓 2025 – Conference Papers</h3>
+<ol start="11">
+  <li>T. Gong, Z. Li, Y. Xu, Q. Wan and Z. Ding, “Privacy-preserving prescribed-time distributed time-varying optimization,” in <i>Proceedings of the 30th International Conference on Automation and Computing (ICAC)</i>, 2025. [Best Theory Paper]</li>
+  <li>C. Cao, Z. Li*, T. Gong and Z. Ding, “Dual adaptive MPC for quasi-linear parameter varying systems,” in <i>Proceedings of the 40th IEEE Chinese Control Conference (CCC)</i>, 2025.</li>
+  <li>Y. Yu, J. Jiang, W.-H. Chen, Z. Li and N. Lohse, “L-step-ahead active learning-based dual control for exploration and exploitation in auto-optimization,” in <i>Proceedings of 19th IEEE International Conference on Control & Automation (ICCA)</i>, pp. 811–816, 2025.</li>
+  <li>T. Gong, Y. Xu, Z. Li, Z. Tang and Z. Ding, “Distributed time-varying optimization with inequality constraints via prescribed-time distributed average tracking,” in <i>Proceedings of the 40th IEEE Chinese Control Conference (CCC)</i>, 2025.</li>
+  <li>C. Blum, K. Groves, Z. Li and O. Marjanovic, “UAV trajectory planning using constrained optimization of a tight b-spline envelope to reduce conservatism,” in <i>Proceedings of the 26th TROS Conference (Towards Autonomous Robotic Systems)</i>, 2025.</li>
+</ol>
+
+<h3>🗓 2024 – Journal Articles</h3>
+<ol start="16">
+  <li>Z. Liang, M. Shen, Z. Li* and J. Yang, “Model-free output feedback path following control for autonomous vehicle with prescribed performance independent of initial conditions,” <i>IEEE/ASME Transactions on Mechatronics</i>, vol. 29, no. 2, pp. 1076–1087, 2024.</li>
+  <li>Z. Liang, C. Lyu, J. Zhao, Z. Li and Z. Ding, “Distributed fixed-time control for leader-steered rigid shape formation with prescribed performance,” <i>IEEE Transactions on Cybernetics</i>, vol. 54, no. 10, pp. 5708–5720, 2024.</li>
+  <li>Q. Wan, T. Fan, Z. Li and Z. Ding, “Event-triggered prescribed-time tracking for uncertain nonlinear systems with unknown control gain and output constraints,” <i>Journal of the Franklin Institute</i>, vol. 361(7), no. 106765, 2024.</li>
+  <li>Y. Xu, A. Parisio, Z. Li and Z. Ding, “Optimization-based ramping reserve allocation of BESS for AGC enhancement,” <i>IEEE Transactions on Power Systems</i>, vol. 39, no. 2, pp. 2491–2505, 2024.</li>
+</ol>
+
+<h3>🗓 2024 – Conference Papers</h3>
+<ol start="20">
+  <li>Q. Wan, T. Fan, Z. Li and Z. Ding, “Optimal regulation of multi-objective continuous-time nonlinear switching systems,” in <i>Proceedings of the 43rd Chinese Control Conference (CCC)</i>, pp. 1591–1596, 2024.</li>
+  <li>X.-F. Wang, Y. Yan, Z. Li, “Distributed robust seeking of Nash equilibria with applications to autonomous vehicles in mobile sensor networks,” in <i>Proceedings of the 43rd Chinese Control Conference (CCC)</i>, pp. 1591–1596, 2024.</li>
+</ol>
+
+<h3>🗓 2023 – Journal Articles</h3>
+<ol start="22">
+  <li>Z. Li*, W.-H. Chen and J. Yang, “Concurrent active learning in autonomous airborne source search: Dual control for exploration and exploitation,” <i>IEEE Transactions on Automatic Control</i>, vol. 68, no. 5, pp. 3123–3130, 2023.</li>
+  <li>Z. Li, W.-H. Chen, J. Yang and Y. Yan, “AID-RL: Active information-directed reinforcement learning for autonomous source seeking and estimation,” <i>Neurocomputing</i>, vol. 544, no. 126281, 2023.</li>
+  <li>Z. Liang, J. Zhao, Z. Li, Y. Wang and Z. Ding, “Adaptive sliding mode fault tolerant control for autonomous vehicle with unknown actuator parameters and saturated tire force based on the center of percussion,” <i>IEEE Transactions on Intelligent Transportation Systems</i>, vol. 24, no. 11, pp. 11595–11606, 2023.</li>
+</ol>
+
+<h3>🗓 2023 – Conference Papers</h3>
+<ol start="25">
+  <li>S. Tang, W.-H. Chen, C. Liu and Z. Li, “New formulation of wave energy converter control using extremum seeking,” <i>IFAC World Congress</i>, vol. 56, no. 2, pp. 11705–11710, 2023.</li>
+  <li>Y. Dong, Z. Li, X. Zhao, Z. Ding and X. Huang, “Decentralised and cooperative control of multi-robot systems through distributed optimisation,” <i>AAMAS '23: Proceedings of the 2023 International Conference on Autonomous Agents and Multiagent Systems</i>, pp. 1421–1429, 2023.</li>
+</ol>
+
+<h3>🗓 2022 – Journal Articles</h3>
+<ol start="27">
+  <li>Z. Li, B. Liu and Z. Ding, “Consensus-based cooperative algorithms for training over distributed data sets using stochastic gradients,” <i>IEEE Transactions on Neural Networks and Learning Systems</i>, vol. 33, no. 10, pp. 5579–5589, 2022.</li>
+  <li>Z. Li, Z. Dong, W.-H. Chen and Z. Ding, “On the game-theoretic analysis of distributed generative adversarial networks,” <i>International Journal of Intelligent Systems</i>, vol. 37, no. 1, pp. 516–534, 2022.</li>
+  <li>Z. Li, Z. H. Li and Z. Ding, “Distributed generalized Nash equilibrium seeking and its application to femtocell networks,” <i>IEEE Transactions on Cybernetics</i>, vol. 52, no. 4, pp. 2505–2517, 2022.</li>
+  <li>Z. Li, W.-H. Chen and C. Liu, “Review of UAV-based autonomous search algorithms for hazardous sources,” <i>Scientia Sinica Informationis</i>, vol. 52, no. 9, pp. 1579–1597, 2022.</li>
+  <li>Z. Dong, Z. Li, Y. Xu, X. Guo and Z. Ding, “Surrogate-assisted cooperation control of network-connected DFIG wind farm with maximized reactive power capacity,” <i>IEEE Transactions on Industrial Informatics</i>, vol. 18, no. 1, pp. 197–206, 2022.</li>
+</ol>
+
+<h3>🗓 2022 – Conference Papers</h3>
+<ol start="32">
+  <li>Z. Li, W.-H. Chen and J. Yang, “A dual control perspective for exploration and exploitation in autonomous search,” in <i>Proceedings of the 2022 European Control Conference (ECC)</i>, pp. 1876–1881, 2022.</li>
+</ol>
+
+<h3>🗓 2021 – Journal Articles</h3>
+<ol start="33">
+  <li>Z. Li, Z. Dong, Z. Liang and Z. Ding, “Surrogate-based distributed optimisation for expensive black-box functions,” <i>Automatica</i>, vol. 125, no. 109407, 2021.</li>
+  <li>Z. Li and Z. Ding, “Distributed multiobjective optimization for network resource allocation of multiagent systems,” <i>IEEE Transactions on Cybernetics</i>, vol. 51, no. 12, pp. 5800–5810, 2021.</li>
+  <li>Z. Dong, Z. Li, Z. Liang, Y. Xu and Z. Ding, “Distributed neural network enhanced power generation strategy of large-scale wind power plant for power expansion,” <i>Applied Energy</i>, vol. 303, no. 117622, 2021.</li>
+  <li>Z. Dong, Z. Li, L. Du, Y. Liu and Z. Ding, “Coordination strategy of large-scale DIFG-based wind farm for voltage support with high converter capacity utilization,” <i>IEEE Transactions on Sustainable Energy</i>, vol. 12, no. 2, pp. 1416–1425, 2021.</li>
+  <li>Z. Dong, Z. Li, Y. Dong, S. Jiang and Z. Ding, “Fully-distributed deloading operation of DFIG-based wind farm for load sharing,” <i>IEEE Transactions on Sustainable Energy</i>, vol. 12, no. 1, pp. 430–440, 2021.</li>
+  <li>Y. Dong, Z. Dong, T. Zhao, Z. Li and Z. Ding, “Short term load forecasting with Markovian switching distributed deep belief networks,” <i>International Journal of Electrical Power & Energy Systems</i>, vol. 130, no. 106942, 2021.</li>
+  <li>Y. Xu, Z. Dong, Z. Li, Y. Liu and Z. Ding, “Distributed optimization for integrated frequency regulation and economic dispatch in microgrids,” <i>IEEE Transactions on Smart Grid</i>, vol. 12, no. 6, pp. 4595–4606, 2021.</li>
+</ol>
+
+<h3>🗓 2021 – Conference Papers</h3>
+<ol start="40">
+  <li>Z. Li, B. Liu, Z. Dong and Z. Ding, “Cooperative training over networks via consensus-based algorithms,” in <i>Proceedings of the 40th IEEE Chinese Control Conference (CCC)</i>, pp. 5309–5314, 2021.</li>
+</ol>
+
+<h3>🗓 2020 – Journal Articles</h3>
+<ol start="41">
+  <li>Z. Li and Z. Ding, “Time-varying multi-objective optimisation over switching graphs via fixed-time consensus algorithms,” <i>International Journal of Systems Science</i>, vol. 51, no. 15, pp. 2793–2806, 2020.</li>
+</ol>
+
+<h3>🗓 2019 – Conference Papers</h3>
+<ol start="42">
+  <li>Z. Li and Z. Ding, “Distributed Nash equilibrium searching via fixed-time consensus-based algorithms,” in <i>Proceedings of IEEE 2019 American Control Conference (ACC)</i>, pp. 2765–2770, 2019.</li>
+</ol>
+
+<p><i>* Corresponding author</i></p>
+
+</div>

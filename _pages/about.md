@@ -1,13 +1,90 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+
+
+
+<div style="background-color:#F6F0FA; border-left:6px solid #660099; padding:1.5em; border-radius:12px; margin-bottom:2em; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+
+<h2 style="margin-top:0; color:#660099;">
+  <i class="fa fa-user" style="margin-right:8px; color:#660099;"></i> Biography
+</h2>
+
+<p style="text-align:justify;">
+Dr. <strong>Zhongguo Li</strong> is currently a Lecturer (Assistant Professor) in Robotics, Control, Communication and AI at the 
+<strong>University of Manchester</strong>. He received the B.Eng. and Ph.D. degrees in Electrical and Electronic Engineering from 
+the University of Manchester, in 2017 and 2021, respectively. Before re-joining Manchester in September 2023, he worked as a Lecturer 
+at <strong>University College London (UCL)</strong> and a Research Associate at 
+<strong>Loughborough University</strong>.
+</p>
+
+<p style="text-align:justify;">
+His research interests include optimisation and decision-making for advanced control, distributed algorithm development for 
+game and learning in network-connected multi-agent systems, and their applications in robotics and autonomous vehicles. 
+In these research fields, he has authored or co-authored more than 40 papers in well-recognised journals and conferences, 
+including <em>IEEE Transactions on Automatic Control</em>, <em>Automatica</em>, <em>IEEE Transactions on Cybernetics</em>, and 
+<em>IEEE Transactions on Neural Networks and Learning Systems</em>. He is also the author of the book 
+<em>Distributed Optimization and Learning</em> (Academic Press, Elsevier, 2024).
+</p>
+</div>
+
+
+## <i class="fa fa-graduation-cap" aria-hidden="true"></i> <span style="color:#007ACC;">Education and Work Experience</span>
+
+<table style="width:100%; border-collapse:collapse; border:none; background:none;">
+  <tr style="border:none; background:none;">
+    <td style="width:20%; vertical-align:top; border:none; background:none;">Sep 2023 – Present</td>
+    <td style="width:45%; vertical-align:top; font-weight:600; border:none; background:none;">Lecturer (Assistant Professor)</td>
+    <td style="width:35%; vertical-align:top; border:none; background:none;">The University of Manchester, U.K.</td>
+  </tr>
+  <tr style="border:none; background:none;">
+    <td style="border:none; background:none;">Oct 2022 – Sep 2023</td>
+    <td style="font-weight:600; border:none; background:none;">Lecturer (Assistant Professor)</td>
+    <td style="border:none; background:none;">University College London (UCL), U.K.</td>
+  </tr>
+  <tr style="border:none; background:none;">
+    <td style="border:none; background:none;">Nov 2020 – Oct 2022</td>
+    <td style="font-weight:600; border:none; background:none;">Postdoctoral Research Associate</td>
+    <td style="border:none; background:none;">Loughborough University, U.K.</td>
+  </tr>
+</table>
+
+<table style="width:100%; border-collapse:collapse; border:none; background:none;">
+  <tr style="border:none; background:none;">
+    <td style="width:20%; vertical-align:top; border:none; background:none;">Sep 2017 – Mar 2021</td>
+    <td style="width:45%; vertical-align:top; font-weight:600; border:none; background:none;">Ph.D. in Electrical and Electronic Engineering</td>
+    <td style="width:35%; vertical-align:top; border:none; background:none;">The University of Manchester, U.K.</td>
+  </tr>
+  <tr style="border:none; background:none;">
+    <td style="border:none; background:none;">Sep 2013 – Jul 2017</td>
+    <td style="font-weight:600; border:none; background:none;">B.Eng. in Electrical and Electronic Engineering </td>
+    <td style="border:none; background:none;">The University of Manchester, U.K.</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+## <i class="fa fa-newspaper" style="color:#E67E22;"></i> <span style="color:#E67E22;">News</span>
+
+- **Oct 2025** — Presented our latest work on *Wireless Energy Transfer for Mobile Robots* at the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025).  
+
+
+
+
+
+
+<!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
 
  You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
 
@@ -53,4 +130,4 @@ Example: editing a Markdown file for a talk
 
 For more info
 ------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->

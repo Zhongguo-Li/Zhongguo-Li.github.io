@@ -22,13 +22,13 @@ repository               : "Zhongguo-Li/Zhongguo-Li.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpeg"
+  avatar           : "profile.png"
   name             : "Zhongguo Li"
   pronouns         : # example: "she/her"  
-  bio              : "Lecturer in Robotics, Control and AI"
+  bio              : "Assistant Professor"
   location         : "Manchester, UK"
   employer         : "University of Manchester"
-  uri              : # URL
+  university_website:  "https://research.manchester.ac.uk/en/persons/zhongguo-li"
   email            : "zhongguo.li@manchester.ac.uk" 
 
   # Academic websites
@@ -62,7 +62,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "https://www.linkedin.com/in/zhongguo-li/"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -77,6 +77,8 @@ author:
   xing             : # Username
   youtube          : # Username
   zhihu            : # Username
+    # university_website:  "https://research.manchester.ac.uk/en/persons/zhongguo-li"
+    
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
@@ -85,7 +87,7 @@ publication_category:
   manuscripts:
     title: 'Journal Articles'    
   conferences:
-    title: 'Conference Papers'
+    title: 'Conference Papers' 
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -121,7 +123,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
