@@ -1,0 +1,43 @@
+.greedy-nav {
+  justify-content: space-between; /* keeps spacing correct */
+}
+
+.greedy-nav .visible-links {
+  margin-left: auto;              /* push items right */
+}
+
+.greedy-nav .visible-links li:first-child {
+  margin-right: auto;             /* first tab left */
+}
+
+/* Optional: add slight spacing between left and right sections */
+.greedy-nav .visible-links li:first-child {
+  padding-right: 2rem;
+  border-right: 1px solid #ddd; /* faint divider */
+}
+
+/* Optional: hover and active tab color */
+.greedy-nav a:hover,
+.greedy-nav a:focus {
+  color: #007ACC;
+  text-decoration: none;
+}
+
+/* Optional: make active tab bold */
+.greedy-nav .current a {
+  font-weight: 600;
+  color: #007ACC;
+}
+
+/* ===== Custom section divider line ===== */
+.section-divider {
+  border: none;
+  height: 6px;                   /* thickness */
+  width: 90%;                    /* length of line (adjust as needed) */
+  background-color: #007ACC;     /* your accent blue */
+  margin: 2rem auto;             /* center horizontally, space above/below */
+  border-radius: 2px;            /* smooth edges */
+  opacity: 0.9;                  /* slightly soft look */
+}
+
+

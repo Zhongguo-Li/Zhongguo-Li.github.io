@@ -1,15 +1,48 @@
 ---
 permalink: /
 title: ""
-author_profile: true
+author_profile: false
+sidebar: false
 redirect_from: 
   - /about/
   - /about.html
 ---
 
 
+<!-- ===== Custom Personal Profile Section ===== -->
+<div style="display:flex; align-items:center; justify-content:flex-start; flex-wrap:wrap; gap:2rem; padding:1.5rem 0; border-bottom:2px solid #e0e0e0;">
+
+  <!-- Left: Full Photo (not cropped) -->
+  <div style="flex:0 0 180px; text-align:center;">
+    <img src="{{ '/images/Photo-ZhongguoLi.jpeg' | relative_url }}" alt="Zhongguo Li" style="width:180px; height:auto; object-fit:contain;">
+  </div>
+
+  <!-- Right: Profile Info -->
+  <div style="flex:1; min-width:250px;">
+    <h2 style="margin:0; font-size:1.6rem; font-weight:700; color:#000;">{{ site.author.name }}</h2>
+    <p style="margin:0.3rem 0; font-size:1.1rem; font-weight:600; color:#333;">{{ site.author.bio }}</p>
+    <p style="margin:0.2rem 0; font-size:1rem; color:#333;">Department of Electrical and Electronic Engineering</p>
+    <p style="margin:0.2rem 0; font-size:1rem; color:#333;">{{ site.author.employer }}</p>
+    <p style="margin-top:1rem;"></p>
+    <p style="margin:0.2rem 0; font-size:1rem; color:#333;">Floor 3-Office 5, Nancy Rothwell Building, Manchester, M13 9PL, UK</p>
+    <p style="margin:0.2rem 0; font-size:1rem; color:#555;">
+      <i class="fa fa-envelope"></i> {{ site.author.email }}
+    </p>
+    <p style="margin-top:0.4rem;">
+      <a href="{{ site.author.googlescholar }}" target="_blank" style="color:#007ACC; font-weight:600; text-decoration:none;">
+        <i class="ai ai-google-scholar-square"></i> Google Scholar
+      </a>
+      <a href="{{ site.author.university_website }}" target="_blank" style="color:#007ACC; font-weight:600; text-decoration:none;">
+        <i class="fa fa-university"></i> University Profile
+      </a>
+    </p>
+  </div>
+</div>
+
+<!-- <hr class="section-divider"> -->
 
 
+<!-- Brief bio  -->
 <div style="background-color:#F6F0FA; border-left:6px solid #660099; padding:1.5em; border-radius:12px; margin-bottom:2em; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
 
 <h2 style="margin-top:0; color:#660099;">
@@ -34,37 +67,34 @@ including <em>IEEE Transactions on Automatic Control</em>, <em>Automatica</em>, 
 </p>
 </div>
 
-
+<!-- Education and work experience  -->
 ## <i class="fa fa-graduation-cap" aria-hidden="true"></i> <span style="color:#007ACC;">Education and Work Experience</span>
 
-<table style="width:100%; border-collapse:collapse; border:none; background:none;">
+<table style="width:100%; border-collapse:collapse; border:none; background:none; font-size:0.94rem; line-height:1.5;">
   <tr style="border:none; background:none;">
-    <td style="width:20%; vertical-align:top; border:none; background:none;">Sep 2023 – Present</td>
-    <td style="width:45%; vertical-align:top; font-weight:600; border:none; background:none;">Lecturer (Assistant Professor)</td>
-    <td style="width:35%; vertical-align:top; border:none; background:none;">The University of Manchester, U.K.</td>
+    <td style="width:20%; vertical-align:top; border:none; background:none;">09/2023–Present</td>
+    <td style="width:47%; vertical-align:top; border:none; background:none;">Lecturer (Assistant Professor)</td>
+    <td style="width:33%; vertical-align:top; border:none; background:none;">University of Manchester</td>
   </tr>
   <tr style="border:none; background:none;">
-    <td style="border:none; background:none;">Oct 2022 – Sep 2023</td>
-    <td style="font-weight:600; border:none; background:none;">Lecturer (Assistant Professor)</td>
-    <td style="border:none; background:none;">University College London (UCL), U.K.</td>
+    <td style="border:none; background:none;">10/2022–09/2023</td>
+    <td style="border:none; background:none;">Lecturer (Assistant Professor)</td>
+    <td style="border:none; background:none;">University College London </td>
   </tr>
   <tr style="border:none; background:none;">
-    <td style="border:none; background:none;">Nov 2020 – Oct 2022</td>
-    <td style="font-weight:600; border:none; background:none;">Postdoctoral Research Associate</td>
-    <td style="border:none; background:none;">Loughborough University, U.K.</td>
-  </tr>
-</table>
-
-<table style="width:100%; border-collapse:collapse; border:none; background:none;">
-  <tr style="border:none; background:none;">
-    <td style="width:20%; vertical-align:top; border:none; background:none;">Sep 2017 – Mar 2021</td>
-    <td style="width:45%; vertical-align:top; font-weight:600; border:none; background:none;">Ph.D. in Electrical and Electronic Engineering</td>
-    <td style="width:35%; vertical-align:top; border:none; background:none;">The University of Manchester, U.K.</td>
+    <td style="border:none; background:none;">11/2020–10/2022</td>
+    <td style="border:none; background:none;">Postdoctoral Research Associate</td>
+    <td style="border:none; background:none;">Loughborough University</td>
   </tr>
   <tr style="border:none; background:none;">
-    <td style="border:none; background:none;">Sep 2013 – Jul 2017</td>
-    <td style="font-weight:600; border:none; background:none;">B.Eng. in Electrical and Electronic Engineering </td>
-    <td style="border:none; background:none;">The University of Manchester, U.K.</td>
+    <td style="border:none; background:none;">09/2017–03/2021</td>
+    <td style="border:none; background:none;">Ph.D. Electrical and Electronic Engineering</td>
+    <td style="border:none; background:none;">University of Manchester</td>
+  </tr>
+  <tr style="border:none; background:none;">
+    <td style="border:none; background:none;">09/2013–07/2017</td>
+    <td style="border:none; background:none;">B.Eng. Electrical and Electronic Engineering</td>
+    <td style="border:none; background:none;">University of Manchester</td>
   </tr>
 </table>
 
@@ -74,6 +104,9 @@ including <em>IEEE Transactions on Automatic Control</em>, <em>Automatica</em>, 
 
 
 
+
+
+<!-- News -->
 
 ## <i class="fa fa-newspaper" style="color:#E67E22;"></i> <span style="color:#E67E22;">News</span>
 
