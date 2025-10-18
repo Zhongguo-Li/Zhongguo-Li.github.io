@@ -22,10 +22,10 @@ repository               : "Zhongguo-Li/Zhongguo-Li.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "assets/images/Photo-ZhongguoLi.jpeg"
+  avatar           : "Photo-ZhongguoLi.jpeg"
   name             : "Zhongguo Li"
   pronouns         : # example: "she/her"  
-  bio              : "Assistant Professor"
+  bio              : "Lecturer (Assistant Professor)"
   location         : "Manchester, UK"
   employer         : "University of Manchester"
   university_website:  "https://research.manchester.ac.uk/en/persons/zhongguo-li"

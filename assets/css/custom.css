@@ -1,43 +1,114 @@
+/* Center all navigation tabs horizontally */
 .greedy-nav {
-  justify-content: space-between; /* keeps spacing correct */
+  justify-content: center !important; /* center nav content */
 }
 
+/* Make sure the visible links themselves distribute evenly */
 .greedy-nav .visible-links {
-  margin-left: auto;              /* push items right */
+  /* display: flex; */
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  gap: 0.2rem; /* spacing between tabs, adjust as needed */
+  margin: 0 auto;
 }
 
+/* Reset any leftover auto margins from older alignment attempts */
 .greedy-nav .visible-links li:first-child {
-  margin-right: auto;             /* first tab left */
+  margin: 0 !important;
 }
+
 
 /* Optional: add slight spacing between left and right sections */
 .greedy-nav .visible-links li:first-child {
-  padding-right: 2rem;
+  padding-right: 0.2rem;
   border-right: 1px solid #ddd; /* faint divider */
 }
 
 /* Optional: hover and active tab color */
 .greedy-nav a:hover,
 .greedy-nav a:focus {
-  color: #007ACC;
+  color: #660099;
   text-decoration: none;
 }
 
-/* Optional: make active tab bold */
-.greedy-nav .current a {
+/* Highlight active tab (using .current or aria-current) */
+.greedy-nav .visible-links li.current a,
+.greedy-nav .visible-links li.active a,
+.greedy-nav .visible-links li > a[aria-current="page"] {
+  color: #660099 !important;
   font-weight: 600;
-  color: #007ACC;
+  border-bottom: 2px solid #660099;
 }
 
 /* ===== Custom section divider line ===== */
 .section-divider {
   border: none;
   height: 6px;                   /* thickness */
-  width: 90%;                    /* length of line (adjust as needed) */
-  background-color: #007ACC;     /* your accent blue */
+  width: 100%;                    /* length of line (adjust as needed) */
+  background-color: #E67E22;     /* your accent blue */
   margin: 2rem auto;             /* center horizontally, space above/below */
   border-radius: 2px;            /* smooth edges */
   opacity: 0.9;                  /* slightly soft look */
 }
 
+/* Force highlight Teaching tab */
+body.page-teaching .greedy-nav .visible-links li a[href="/teaching/"] {
+  color: #660099 !important;
+  font-weight: 600;
+  border-bottom: 2px solid #660099;
+}
 
+
+/* Highlight active tab */
+.greedy-nav .visible-links li.current a,
+.greedy-nav .visible-links li.active a,
+.greedy-nav .visible-links li > a[aria-current="page"] {
+  color: #660099 !important;
+  font-weight: 600;
+  border-bottom: 2px solid #660099;
+}
+
+/* Hover consistency */
+.greedy-nav a:hover,
+.greedy-nav a:focus {
+  color: #660099 !important;
+  text-decoration: none;
+}
+
+
+.page__content {
+  max-width: 1200px !important;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Make single pages wider */
+.layout--single .page__inner-wrap,
+.layout--single .page__content {
+  max-width: 1200px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 2rem !important;
+}
+
+
+/* When sidebar is off, center the page fully */
+#main {
+  display: block !important; /* Disable flex layout that reserves sidebar space */
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+/* Ensure content area spans full width */
+.layout--single .page,
+.layout--single .page__inner-wrap,
+.layout--single .page__content {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 2rem !important;
+}
+
+article.page {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
