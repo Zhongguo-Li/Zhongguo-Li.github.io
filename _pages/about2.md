@@ -3,10 +3,18 @@ permalink: /
 title: ""
 author_profile: false
 sidebar: false
-redirect_from: 
-  - /about/
-  - /about.html
+# redirect_from: 
+#   - /about/
+#   - /about.html
 ---
+
+<style>
+.page__content { 
+  max-width: 1500px; 
+  margin: 0 auto; 
+  padding: 0 2rem; 
+}
+</style>
 
 
 <!-- ===== Custom Personal Profile Section ===== -->
@@ -23,17 +31,20 @@ redirect_from:
     <p style="margin:0.3rem 0; font-size:1.1rem; font-weight:600; color:#333;">{{ site.author.bio }}</p>
     <p style="margin:0.2rem 0; font-size:1rem; color:#333;">Department of Electrical and Electronic Engineering</p>
     <p style="margin:0.2rem 0; font-size:1rem; color:#333;">{{ site.author.employer }}</p>
-    <p style="margin-top:1rem;"></p>
+    <p style="margin-top:0.2rem;"></p>
     <p style="margin:0.2rem 0; font-size:1rem; color:#333;">Floor 3-Office 5, Nancy Rothwell Building, Manchester, M13 9PL, UK</p>
     <p style="margin:0.2rem 0; font-size:1rem; color:#555;">
       <i class="fa fa-envelope"></i> {{ site.author.email }}
     </p>
-    <p style="margin-top:0.4rem;">
-      <a href="{{ site.author.googlescholar }}" target="_blank" style="color:#007ACC; font-weight:600; text-decoration:none;">
-        <i class="ai ai-google-scholar-square"></i> Google Scholar
+    <p style="margin-top:0.2rem;">
+      <a href="https://scholar.google.co.uk/citations?user=nEB1dJ0AAAAJ&hl=en" target="_blank" style="color:#007ACC; font-weight:600; text-decoration:none;">
+        <i class="ai ai-google-scholar-square" style="margin-right:0.1rem;"></i> Google Scholar 
       </a>
-      <a href="{{ site.author.university_website }}" target="_blank" style="color:#007ACC; font-weight:600; text-decoration:none;">
-        <i class="fa fa-university"></i> University Profile
+      <a href="https://research.manchester.ac.uk/en/persons/zhongguo-li" target="_blank" style="color:#007ACC; font-weight:600; text-decoration:none;">
+        <i class="fa fa-university" style="margin-right:0.1rem;"></i> University Profile 
+      </a>
+      <a href="https://www.linkedin.com/in/zhongguo-li/" target="_blank" style="color:#007ACC; font-weight:600; text-decoration:none;">
+        <i class="fab fa-fw fa-linkedin icon-pad-right" style="margin-right:0.1rem;"></i>LinkedIn 
       </a>
     </p>
   </div>

@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+{% comment %}
+  Custom layout: single2
+  Based on Minimal Mistakes “single” but simplified for manual control.
+  - Works with active tab highlighting
+  - Supports author_profile option
+  - Keeps consistent content width
+{% endcomment %}
+
+{% include base_path %}
+
+<article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+
+  {% if page.title %}
+  <header class="page__header">
+    <h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+  </header>
+  {% endif %}
+
+  <div class="page__inner-wrap">
+
+    {% if page.author_profile == true %}
+      {% include author-profile.html %}
+    {% endif %}
+
+    <section class="page__content" itemprop="text" style="max-width: 1000px; margin: 0 auto;">
+      {{ content }}
+    </section>
+
+    {% if page.after_content %}
+      <section class="page__meta">
+        {{ page.after_content }}
+      </section>
+    {% endif %}
+
+  </div>
+</article>
