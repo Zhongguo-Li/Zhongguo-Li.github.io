@@ -43,3 +43,27 @@
   opacity: 0.9;                  /* slightly soft look */
 }
 
+
+.pub-list {
+  counter-reset: pub;
+  margin-left: 0;
+}
+
+.pub-item {
+  position: relative;
+  padding-left: 3rem;        /* space for the number */
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.pub-item::before {
+  counter-increment: pub;
+  content: counter(pub) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.2rem;             /* aligns multi-digit numbers */
+  text-align: right;
+  font-weight: 600;
+  color: #333;
+}
