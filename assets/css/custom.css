@@ -3,9 +3,7 @@
   justify-content: center !important; /* center nav content */
 }
 
-.greedy-nav button {
-  display: none !important;
-}
+
 
 /* Make sure the visible links themselves distribute evenly */
 .greedy-nav .visible-links {
