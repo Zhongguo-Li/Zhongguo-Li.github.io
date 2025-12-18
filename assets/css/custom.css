@@ -1,17 +1,19 @@
-/* Center all navigation tabs horizontally */
+/* Right-align all top navigation tabs */
 .greedy-nav {
-  justify-content: center !important; /* center nav content */
+  display: flex;
+  justify-content: flex-end !important; /* push everything right */
 }
 
-
-
-/* Make sure the visible links themselves distribute evenly */
+/* Ensure menu items stay visible and aligned */
 .greedy-nav .visible-links {
-  /* display: flex; */
-  justify-content: center;
-  /* flex-wrap: wrap; */
-  gap: 0.2rem; /* spacing between tabs, adjust as needed */
-  margin: 0 auto;
+  display: flex !important;
+  justify-content: flex-end !important;
+  margin-left: auto !important; /* key line */
+}
+
+/* Optional: spacing between tabs */
+.greedy-nav .visible-links > li {
+  margin-left: 0.8rem;
 }
 
 /* Optional: hover and active tab color */
