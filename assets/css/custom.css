@@ -1,15 +1,15 @@
 /* Right-align all top navigation tabs */
 .greedy-nav {
   display: flex;
-  justify-content: flex-end !important; /* push everything right */
-}
+  justify-content: center !important; /* push everything right */
+} 
 
 /* Ensure menu items stay visible and aligned */
-.greedy-nav .visible-links {
+/* .greedy-nav .visible-links {
   display: flex !important;
-  justify-content: flex-end !important;
-  margin-left: auto !important; /* key line */
-}
+  justify-content: center !important;
+  margin-left: auto !important; key line
+}  */
 
 /* Optional: spacing between tabs */
 .greedy-nav .visible-links > li {
